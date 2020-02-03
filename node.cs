@@ -40,7 +40,7 @@ namespace BSTree
         }
         public bool Search(node node, int s)
         {
-            if (node = null)
+            if (node == null)
             {
                 return false;
                 }
@@ -55,7 +55,7 @@ namespace BSTree
             }
             else if (node.input > s)
             {
-                return Search(node.LeftNode);
+                return Search(node.LeftNode, s);
             }
             return false;
         }

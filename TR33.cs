@@ -47,8 +47,9 @@ namespace BSTree
         {
             if (!IsItEmpty())
                 root.display(root);
+            return true;
         }
-        public int count()
+        public int Count()
         {
             return count;
         }
